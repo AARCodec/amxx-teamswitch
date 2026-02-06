@@ -1,6 +1,9 @@
 # amxx-teamswitch
 Automate team switch in a competitive environment (Per @Carl's view).
 
+Scores are preserved. Money is reset along with losing team bonuses. Weapons are disarmed.
+
+
 # Console Variables
 mp_game_max_rounds (Default: 15) | Amount of rounds total that can be played. If no team reaches mp_game_win_limit.
 
