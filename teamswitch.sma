@@ -11,6 +11,10 @@
 #include <hamsandwich>
 #include <reapi>
 
+#if !defined MAX_MAPNAME_LENGTH
+#define MAX_MAPNAME_LENGTH 64
+#endif
+
 new bool:g_bGameOver, bool:g_bSwitchTeams;
 new g_pGameMaxRounds, g_pGameHalfTime, g_pGameWinLimit;
 
@@ -138,3 +142,4 @@ public CBasePlayer_ResetMaxSpeed_Post(id)
 	set_entvar(id, var_maxspeed, 0.1);
 	return HC_CONTINUE;
 }
+
